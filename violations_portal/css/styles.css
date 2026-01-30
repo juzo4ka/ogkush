@@ -1,0 +1,104 @@
+/* --- Общие базовые стили --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 20px; /* Отступ сверху для контента */
+}
+
+a {
+    color: #007bff; /* Стандартный синий цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* --- Стили для шапки и навигации (из header.php) --- */
+header.container-fluid {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#logo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Стилизация блоков авторизации/регистрации */
+#auth_block, #exit_block {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание вправо */
+    gap: 15px;
+    padding-right: 15px;
+    align-items: center;
+    height: 100%;
+}
+
+/* --- Стили для основного контента и галереи (index.php) --- */
+main.flex {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Стили для карточек туров (класс .country, который мы использовали) */
+.country {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.country img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.country p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* Выравнивание колонок в галерее */
+.container-fluid .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Отступы между карточками */
+    justify-content: center;
+}
+
+.container-fluid .col {
+    flex: 1 1 300px; /* Гибкое изменение размера колонок */
+    max-width: 300px;
+}
+
+/* --- Стили для футера (если есть) --- */
+/* (В вашем header.php не было футера, но если вы его добавите, стили пригодятся) */
+
